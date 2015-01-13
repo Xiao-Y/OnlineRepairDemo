@@ -23,12 +23,26 @@
 		text-decoration: none;
 		color: #0A0A0A;
 	}
+	
+	*{
+		font-size: 12px;
+	}
 </style>
 
+<!-- 切换折叠 -->
 <script type="text/javascript">
 	$().ready(function() {
+		var falg = "add";
 		$(".qx_list").hide();
 		$(".qx").click(function() {
+			var id = $(this).attr("id");
+			if(falg == "add"){
+				$("img[name="+ id +"]").attr("src","${pageContext.request.contextPath }/images/open.gif");
+				falg = "open";
+			}else{
+				$("img[name="+ id +"]").attr("src","${pageContext.request.contextPath }/images/add.gif");
+				falg = "add";
+			}
 			$(this).next().toggle();
 		});
 	});
@@ -53,36 +67,33 @@
 	<table height="100%" cellSpacing="0" cellPadding="0" width="143" border="0">
 		<tr>
 			<td vAlign="top" bgColor="#F6F6F6" height="100%">
-			<%
-				for(int i = 0; i < 8; i++){
-			%>
-				<div class="qx">
+			
+				<div class="qx" id="deviceMagParent">
 					<table cellSpacing="0" cellPadding="0" width="100%" border="0">
 						<tr height=25>
 							<td align="left" background="${pageContext.request.contextPath }/images/b-info.gif"  vAlign="middle">
-								<div class="qx">
-									&nbsp;<img src="${pageContext.request.contextPath }/images/add.gif" name="imgKB0" width="8" height="9" alt="" border="0" />
-									权限管理1
+								<div class="img">
+									&nbsp;<img src="${pageContext.request.contextPath }/images/add.gif" name="deviceMagParent" width="8" height="9" alt="" border="0" />
+									设备管理
 								</div>
 							</td>
 						</tr>
 					</table>
 				</div>
-				<div class="qx_list" id="KB0Child">
+				<div class="qx_list" id="deviceMagChild">
 					<table cellSpacing="0" cellPadding="0" width="99%" border="0">
 						<tr>
 							<td class="box05" onmouseover="backgroundColorChange(this,'#AAAAAA');" onmouseout="backgroundColorChange(this,'');">
-								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/test1.html' target="main">权限管理11</a>
+								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/DeviceMag/deviceInfo.jsp' target="main">设备信息管理</a>
 							</td>
 						</tr>
 						<tr>
 							<td class="box05" onmouseover="backgroundColorChange(this,'#AAAAAA');" onmouseout="backgroundColorChange(this,'');">
-								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/test2.html' target="main">权限管理12</a>
+								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/test2.html' target="main">查询设备状态</a>
 							</td>
 						</tr>
 					</table>
 				</div>
-			<%} %>
 			</td>
 		</tr>
 	</table>

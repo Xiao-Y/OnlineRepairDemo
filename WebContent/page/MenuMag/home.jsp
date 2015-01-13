@@ -13,7 +13,7 @@
 	}  
 </script>
 
-<title>Insert title here</title>
+<title>设备故障申报系统</title>
 </head>
 	<!--  
 	  		frameborder:区域边框的宽度，为了让“画中画“与邻近的内容相融合，常设置为0。
