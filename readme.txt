@@ -13,7 +13,10 @@ MenuMag		菜单管理
 
 DeviceMag	设备管理
 	deviceInfo	设备信息管理
+	deviceAdd.jsp	添加设备信息
+	deviceView.jsp	编辑、查看设备信息
 	
+	deviceState.jsp	查看设备状态
 	
 ResourceMag  资源管理
 

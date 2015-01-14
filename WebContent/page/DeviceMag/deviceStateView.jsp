@@ -7,19 +7,14 @@
 <script type="text/javascript" src="${pageContext.request.contextPath }/js/myJquery.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath }/js/My97DatePicker/WdatePicker.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath }/js/uploadPreview/uploadPreview.js"></script>
+<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/css/pub.css" />
 
-<title>Insert title here</title>
-<style type="text/css">
-* {
-	font-size: 12px;
-}
-</style>
+<title>查看-修改设备状态信息</title>
 <script>
    window.onload = function () { 
         new uploadPreview({ UpBtn: "up_img", DivShow: "imgdiv", ImgShow: "imgShow" });
     }
 </script>
-
 
 </head>
 <body>
@@ -28,49 +23,63 @@
     <table cellSpacing="1" cellPadding="5" width="580" align="center" bgColor="#eeeeee" style="border:1px solid #8ba7e3" border="0">
 		<tr>
 			<td class="ta_01" align="center" colSpan="4" background="${pageContext.request.contextPath }/images/b-info.gif">
-				<font face="宋体" size="2"><strong>添加设备</strong></font>
+				<font face="宋体" size="2"><strong>查看-修改设备状态信息</strong></font>
 			</td>
 		</tr>
-		
 	    <tr>
 	       <td align="center" bgColor="#f5fafe" class="ta_01">设&nbsp;&nbsp;备&nbsp;&nbsp;名：<font color="#FF0000">*</font></td>
 	       <td class="ta_01" bgColor="#ffffff">
-	       		<input name="" id="" maxlength="25" size="20">
+	       		<input name="deviceName" id="deviceName" maxlength="25" size="20">
 	       </td>
 	       <td width="18%" align="center" bgColor="#f5fafe" class="ta_01">型&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号：<font color="#FF0000">*</font></td>
 	       <td class="ta_01" bgColor="#ffffff">
-	       		<input name="" id="" maxlength="25" size="20">
+	       		<input name="version" id="version" maxlength="25" size="20">
 	       </td>
 	    </tr>
 	    
 		<tr>
-		    <td align="center" bgColor="#f5fafe" class="ta_01">安装位置：</td>
+			<td align="center" bgColor="#f5fafe" class="ta_01">安装位置：<font color="#FF0000">*</font></td>
+	       	<td class="ta_01" bgColor="#ffffff">
+	       		<input name="installationSite" id="installationSite" maxlength="25" size="20">
+	       	</td>
+		    <td align="center" bgColor="#f5fafe" class="ta_01">安装日期：</td>
 			<td class="ta_01" bgColor="#ffffff">
-				<select>
-					<option>----</option>				
-					<option>6139</option>				
-					<option>6159</option>				
-					<option>6119</option>				
-				</select>
+				<input class="Wdate" type="text" size="20" onclick="WdatePicker({readOnly:true,highLineWeekDay:false})">
+			</td>
+		</tr>
+		<tr>
+			<td align="center" bgColor="#f5fafe" class="ta_01">上次检修日期：<font color="#FF0000">*</font></td>
+	       	<td class="ta_01" bgColor="#ffffff">
+				<input class="Wdate" type="text" size="20" onclick="WdatePicker({readOnly:true,highLineWeekDay:false})">
+	       	</td>
+		    <td align="center" bgColor="#f5fafe" class="ta_01">下次检修日期：</td>
+			<td class="ta_01" bgColor="#ffffff">
+				<input class="Wdate" type="text" size="20" onclick="WdatePicker({readOnly:true,highLineWeekDay:false})">
+			</td>
+		</tr>
+		
+		<tr>
+		    <td align="center" bgColor="#f5fafe" class="ta_01">设备价格：</td>
+			<td class="ta_01" bgColor="#ffffff">
+				<input name="" id="" maxlength="25" size="20">
 			</td>
 			<td align="center" bgColor="#f5fafe" class="ta_01">生&nbsp;&nbsp;产&nbsp;&nbsp;商：<font color="#FF0000">*</font></td>
 	       	<td class="ta_01" bgColor="#ffffff">
-	       		<input name="" id="" maxlength="25" size="20">
+	       		<input name="producer" id="producer" maxlength="25" size="20">
 	       	</td>
 		</tr>
 		
 		<tr>
 			<td align="center" bgColor="#f5fafe" class="ta_01">优先级别：<font color="#FF0000">*</font></td>
 	       	<td class="ta_01" bgColor="#ffffff">
-	       		<input type="radio" value="A">A&nbsp;&nbsp;
-	       		<input type="radio" value="B">B&nbsp;&nbsp;
-	       		<input type="radio" value="C">C&nbsp;&nbsp;
-	       		<input type="radio" value="D">D&nbsp;&nbsp;
+	       		<input type="radio" name="rank" value="A">A&nbsp;&nbsp;
+	       		<input type="radio" name="rank" value="B">B&nbsp;&nbsp;
+	       		<input type="radio" name="rank" value="C">C&nbsp;&nbsp;
+	       		<input type="radio" name="rank" value="D">D&nbsp;&nbsp;
 	       	</td>
-			<td align="center" bgColor="#f5fafe" class="ta_01">安装日期：</td>
+			<td align="center" bgColor="#f5fafe" class="ta_01">运行状态：</td>
 			<td class="ta_01" bgColor="#ffffff">
-				<!-- 默认的起始日期为 1991-12-23 -->
-				<input class="Wdate" type="text" onclick="WdatePicker({readOnly:true,highLineWeekDay:false,startDate:'1991-12-23'})">
+				<input name="" id="" maxlength="25" size="20">
 			</td>
 		</tr>
 

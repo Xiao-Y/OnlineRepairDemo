@@ -4,30 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Insert title here</title>
 <script type="text/javascript" src="${pageContext.request.contextPath }/js/jquery-1.8.0.min.js"></script>
-
-<style type="text/css">
-	body {
-		MARGIN: 0px; BACKGROUND-COLOR: #8ba7e3
-	}
-	body {
-		COLOR: #000000
-	}
-	td {
-		COLOR: #000000
-	}
-	th {
-		COLOR: #000000
-	} 
-	
-	a{
-		text-decoration: none;
-		color: #0A0A0A;
-	}
-	
-	*{
-		font-size: 12px;
-	}
-</style>
+<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/css/pub.css" />
 
 <!-- 切换折叠 -->
 <script type="text/javascript">
@@ -82,14 +59,14 @@
 				</div>
 				<div class="qx_list" id="deviceMagChild">
 					<table cellSpacing="0" cellPadding="0" width="99%" border="0">
-						<tr>
+						<tr height="25">
 							<td class="box05" onmouseover="backgroundColorChange(this,'#AAAAAA');" onmouseout="backgroundColorChange(this,'');">
-								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/DeviceMag/deviceInfo.jsp' target="main">设备信息管理</a>
+								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/DeviceMag/deviceInfoList.jsp' target="main">设备信息管理</a>
 							</td>
 						</tr>
-						<tr>
+						<tr height="25">
 							<td class="box05" onmouseover="backgroundColorChange(this,'#AAAAAA');" onmouseout="backgroundColorChange(this,'');">
-								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/test2.html' target="main">查询设备状态</a>
+								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/DeviceMag/deviceStateList.jsp' target="main">查询设备状态</a>
 							</td>
 						</tr>
 					</table>

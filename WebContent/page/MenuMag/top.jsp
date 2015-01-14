@@ -6,26 +6,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <TITLE>Top</TITLE>
-<script type="text/javascript" src="${pageContext.request.contextPath }/My97DatePicker/WdatePicker.js"></script>
-
-<style type=text/css>
-body {
-	font-size: 12px;
-	margin: 0px;
-	color: #000000;
-	background-color: #ffffff
-}
-
-td {
-	font-size: 12px;
-	color: #000000
-}
-
-th {
-	font-size: 12px;
-	color: #000000
-}
-</style>
+<script type="text/javascript" src="${pageContext.request.contextPath }/js/My97DatePicker/WdatePicker.js"></script>
+<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/css/pub.css" />
 
 </head>
 <body>

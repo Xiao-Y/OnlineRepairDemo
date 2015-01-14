@@ -1,0 +1,23 @@
+
+body {
+	margin: 0px;
+	color: #000000;
+	background-color: #ffffff
+}
+
+td {
+	color: #000000
+}
+
+th {
+	color: #000000
+}
+
+a {
+	text-decoration: none;
+	color: #0A0A0A;
+}
+
+* {
+	font-size: 12px;
+}
