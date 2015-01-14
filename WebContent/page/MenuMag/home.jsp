@@ -33,8 +33,8 @@
 <frameset border=0 frameSpacing="0" rows="85,*"frameBorder="1" id="mainparent">
 	<frame name=topFrame src="${pageContext.request.contextPath }/page/MenuMag/top.jsp" noResize scrolling=no>
 	<frameset name="main" border=0 frameSpacing=0 frameBorder=1 cols=143,*>
-		<frame name="leftFrame" src="${pageContext.request.contextPath }/page/MenuMag/left.jsp" noResize>
-		<frame name="main">
+		<frame name="leftFrame" src="${pageContext.request.contextPath }/page/MenuMag/left.jsp" noResize scrolling="auto">
+		<frame name="main" scrolling="auto">
 	</frameset>
 	<%-- 
 	<frame name=topFrame src="${pageContext.request.contextPath }/page/MenuMag/buttom.jsp" noResize scrolling=no>
