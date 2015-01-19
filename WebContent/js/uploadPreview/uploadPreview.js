@@ -51,8 +51,8 @@ var uploadPreview = function(setting) {
         UpBtn: "",
         DivShow: "",
         ImgShow: "",
-        Width: 100,
-        Height: 100,
+        Width: 500,//2015-1-19更改默认的宽度
+        Height: 300,//2015-1-19更改默认的高度
         ImgType: ["gif", "jpeg", "jpg", "bmp", "png"],
         ErrMsg: "选择文件错误,图片类型必须是(gif,jpeg,jpg,bmp,png)中的一种",
         callback: function() { }

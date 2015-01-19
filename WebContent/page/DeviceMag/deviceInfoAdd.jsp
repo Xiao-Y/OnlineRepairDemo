@@ -15,6 +15,7 @@
    window.onload = function () { 
         new uploadPreview({ UpBtn: "up_img", DivShow: "imgdiv", ImgShow: "imgShow" });
     }
+   
 </script>
 
 
@@ -74,7 +75,7 @@
 		<tr>
 			<td class="ta_01" align="center" bgcolor="#f5fafe">上传的图片：</td>
 			<td class="ta_01" bgcolor="#ffffff" colspan="3">
-				<div id="imgdiv"><img id="imgShow" width="500px" height="300px" /></div>
+				<div id="imgdiv"><img id="imgShow" width="500px" height="300px"/></div>
 			</td>
 		</tr>
 		<tr>
@@ -84,15 +85,14 @@
 			</td>
 		</tr>
 		
-		<TR>
+		<tr>
 			<td  align="center"  colSpan="4"  class="sep1"></td>
-		</TR>
+		</tr>
 		<tr>
 			<td class="ta_01" style="WIDTH: 100%" align="center" bgColor="#f5fafe" colSpan="4">
 			<input type="button" name="BT_Submit" value="保存"  style="font-size:12px; color:black; height=22;width=55"   onClick="check_null()">
 			 <FONT face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</FONT>
 			<input style="font-size:12px; color:black; height=22;width=55"  type="button" value="关闭"  name="Reset1"  onClick="custom_close()">
-				
 			</td>
 		</tr>
 	</table>　

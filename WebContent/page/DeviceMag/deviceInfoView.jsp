@@ -83,9 +83,9 @@
 			</td>
 		</tr>
 		
-		<TR>
-			<td  align="center"  colSpan="4"  class="sep1"></td>
-		</TR>
+		<tr>
+			<td  align="center"  colspan="4"  class="sep1"></td>
+		</tr>
 		<tr>
 			<td class="ta_01" style="WIDTH: 100%" align="center" bgColor="#f5fafe" colSpan="4">
 			<input type="button" name="BT_Submit" value="保存"  style="font-size:12px; color:black; height=22;width=55"   onClick="check_null()">
