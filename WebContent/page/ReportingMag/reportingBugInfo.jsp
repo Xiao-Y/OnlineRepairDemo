@@ -9,7 +9,7 @@
 <script type="text/javascript" src="${pageContext.request.contextPath }/js/uploadPreview/uploadPreview.js"></script>
 <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/css/pub.css" />
 
-<title>查看-修改设备状态信息</title>
+<title>申报故障信息</title>
 <script>
    window.onload = function () { 
         new uploadPreview({ UpBtn: "up_img", DivShow: "imgdiv", ImgShow: "imgShow" });
@@ -23,7 +23,7 @@
     <table cellSpacing="1" cellPadding="5" width="580" align="center" bgColor="#eeeeee" style="border:1px solid #8ba7e3" border="0">
 		<tr>
 			<td class="ta_01" align="center" colSpan="4" background="${pageContext.request.contextPath }/images/b-info.gif">
-				<font face="宋体" size="2"><strong>查看-修改设备状态信息</strong></font>
+				<font face="宋体" size="2"><strong>申报故障信息</strong></font>
 			</td>
 		</tr>
 	    <tr>

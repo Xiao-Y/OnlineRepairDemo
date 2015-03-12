@@ -24,6 +24,7 @@
 	//清除查询条件
 	$().ready(function(){
 		$("#BT_Reset").click(function(){
+			$("#area").val("");
 			$("#deviceName").val("");
 			$("#version").val("");
 			$("#producer").val("");
@@ -49,6 +50,16 @@
 			</tr>
 			<tr>
 				<td class="ta_01" align="center" bgcolor="#f5fafe" height="22">
+				区域：</td>
+				<td class="ta_01" >
+					<select id="area" name="area" style="width: 143px">
+						<option>------请选择------</option>				
+						<option>教室</option>				
+						<option>寝室</option>				
+						<option>机房</option>				
+					</select>
+				</td>
+				<td class="ta_01" align="center" bgcolor="#f5fafe" height="22">
 				设备名：</td>
 				<td class="ta_01" >
 					<input name="deviceName" id="deviceName" size="21">
@@ -58,13 +69,13 @@
 				<td class="ta_01" >
 					<input name="version" id="version" size="21">
 				</td>
-				<td class="ta_01" align="center" bgcolor="#f5fafe" height="22">
-				安装日期：</td>
-				<td class="ta_01" >
-					<input class="Wdate" type="text" name="installationDate" id="installationDate" size="21" onclick="WdatePicker({readOnly:true,highLineWeekDay:false})">
-				</td>
 			</tr>
 			<tr>
+				<td class="ta_01" align="center" bgcolor="#f5fafe" height="21">
+				安装日期：</td>
+				<td class="ta_01" >
+					<input class="Wdate" type="text" name="installationDate" id="installationDate" size="22" onclick="WdatePicker({readOnly:true,highLineWeekDay:false})">
+				</td>
 				<td class="ta_01" align="center" bgcolor="#f5fafe" height="22">
 				运行状态：</td>
 				<td class="ta_01" >
@@ -115,6 +126,7 @@
 						style="border-right:gray 1px solid; border-top:gray 1px solid; border-left:gray 1px solid; width:100%; word-break:break-all; border-bottom:gray 1px solid; border-collapse:collapse; background-color:#f5fafe; word-wrap:break-word">
 						<!-- 列表标题 begin -->
 						<tr style="font-weight:bold;font-size:12pt;height:25px;background-color:#afd1f3">
+						  <td align="center" width="10%" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">区域</td>
 						  <td align="center" width="20%" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">设备名</td>
 							<td align="center" width="20%" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">型号</td>
 							<td align="center" width="10%" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">安装日期</td>
@@ -129,6 +141,9 @@
 							for(int i = 0; i < 10; i++){
 						%>
 						<tr onmouseover="this.style.backgroundColor = 'white'" onmouseout="this.style.backgroundColor = '#F5FAFE';">
+							<td style="height:22px" align="center" width="10%">
+								教室
+							</td>
 							<td style="height:22px" align="center" width="20%">
 								<input type="hidden" id="123">
 								<a href="${pageContext.request.contextPath }/page/DeviceMag/deviceStateView.jsp">格力空调</a>

@@ -29,13 +29,14 @@ pub.css		公有的样式
 	userInfoAdd.jsp		添加用户信息
 	userInfoView.jsp	查看用户的详细信息
 	
-四、AuditMag		审核管理
+四、ReportingMag	申报管理
+	
 
 五、AuthorityMag 权限管理
 
 六、CountMag		统计管理
 
-七、ReportingMag	申报管理
+七、AuditMag		审核管理
 	
 八、ResourceMag  资源管理
 

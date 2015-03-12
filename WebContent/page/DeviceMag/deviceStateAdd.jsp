@@ -27,25 +27,30 @@
 			</td>
 		</tr>
 	    <tr>
+	       <td align="center" bgColor="#f5fafe" class="ta_01">区&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;域：<font color="#FF0000">*</font></td>
+	       <td class="ta_01" bgColor="#ffffff">
+	       		<select id="area" name="area" style="width: 140px">
+					<option>------请选择------</option>				
+					<option>教室</option>				
+					<option>寝室</option>				
+					<option>机房</option>				
+				</select>
+	       </td>
 	       <td align="center" bgColor="#f5fafe" class="ta_01">设&nbsp;&nbsp;备&nbsp;&nbsp;名：<font color="#FF0000">*</font></td>
 	       <td class="ta_01" bgColor="#ffffff">
 	       		<input name="deviceName" id="deviceName" maxlength="25" size="20">
 	       </td>
-	       <td width="18%" align="center" bgColor="#f5fafe" class="ta_01">型&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号：<font color="#FF0000">*</font></td>
-	       <td class="ta_01" bgColor="#ffffff">
-	       		<input name="version" id="version" maxlength="25" size="20">
-	       </td>
 	    </tr>
 	    
 		<tr>
+			<td align="center" bgColor="#f5fafe" class="ta_01">型&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号：<font color="#FF0000">*</font></td>
+	       	<td class="ta_01" bgColor="#ffffff">
+	       		<input name="version" id="version" maxlength="25" size="20">
+	      	</td>
 			<td align="center" bgColor="#f5fafe" class="ta_01">安装位置：<font color="#FF0000">*</font></td>
 	       	<td class="ta_01" bgColor="#ffffff">
 	       		<input name="installationSite" id="installationSite" maxlength="25" size="20">
 	       	</td>
-		    <td align="center" bgColor="#f5fafe" class="ta_01">安装日期：</td>
-			<td class="ta_01" bgColor="#ffffff">
-				<input class="Wdate" type="text" size="20" onclick="WdatePicker({readOnly:true,highLineWeekDay:false})">
-			</td>
 		</tr>
 		<tr>
 			<td align="center" bgColor="#f5fafe" class="ta_01">上次检修日期：<font color="#FF0000">*</font></td>
@@ -59,17 +64,21 @@
 		</tr>
 		
 		<tr>
+			<td align="center" bgColor="#f5fafe" class="ta_01">安装日期：</td>
+			<td class="ta_01" bgColor="#ffffff">
+				<input class="Wdate" type="text" size="20" onclick="WdatePicker({readOnly:true,highLineWeekDay:false})">
+			</td>
 		    <td align="center" bgColor="#f5fafe" class="ta_01">设备价格：</td>
 			<td class="ta_01" bgColor="#ffffff">
 				<input name="" id="" maxlength="25" size="20">
 			</td>
+		</tr>
+		
+		<tr>
 			<td align="center" bgColor="#f5fafe" class="ta_01">生&nbsp;&nbsp;产&nbsp;&nbsp;商：<font color="#FF0000">*</font></td>
 	       	<td class="ta_01" bgColor="#ffffff">
 	       		<input name="producer" id="producer" maxlength="25" size="20">
 	       	</td>
-		</tr>
-		
-		<tr>
 			<td align="center" bgColor="#f5fafe" class="ta_01">优先级别：<font color="#FF0000">*</font></td>
 	       	<td class="ta_01" bgColor="#ffffff">
 	       		<input type="radio" name="rank" value="A">A&nbsp;&nbsp;
@@ -77,13 +86,17 @@
 	       		<input type="radio" name="rank" value="C">C&nbsp;&nbsp;
 	       		<input type="radio" name="rank" value="D">D&nbsp;&nbsp;
 	       	</td>
-			<td align="center" bgColor="#f5fafe" class="ta_01">运行状态：</td>
-			<td class="ta_01" bgColor="#ffffff">
-				<input name="" id="" maxlength="25" size="20">
-			</td>
 		</tr>
 
 		<tr>
+			<td align="center" bgColor="#f5fafe" class="ta_01">运行状态：</td>
+			<td class="ta_01" bgColor="#ffffff">
+				<select id="state" name="state" style="width: 140px">
+					<option>------请选择------</option>				
+					<option>正常运行</option>				
+					<option>运行异常</option>				
+				</select>
+			</td>
 			<td class="ta_01" align="center" bgcolor="#f5fafe">设备图片：</td>
 			<td class="ta_01" bgcolor="#ffffff" colspan="3">
 				<input type="file" id="up_img" />
