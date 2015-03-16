@@ -63,7 +63,7 @@
 		       	</td>
 			    <td align="center" bgColor="#f5fafe" class="ta_01">联系方式：</td>
 				<td class="ta_01" bgColor="#ffffff">
-					<input name="version" id="version" maxlength="25" size="20">
+					<input name="phone" id="phone" maxlength="25" size="20">
 				</td>
 			</tr>
 			

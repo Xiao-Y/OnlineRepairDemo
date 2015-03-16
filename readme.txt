@@ -30,7 +30,8 @@ pub.css		公有的样式
 	userInfoView.jsp	查看用户的详细信息
 	
 四、ReportingMag	申报管理
-	
+	reportingBugInfo.jsp 		申报故障信息
+	reportingBugInfoList.jsp	故障信息列表
 
 五、AuthorityMag 权限管理
 
