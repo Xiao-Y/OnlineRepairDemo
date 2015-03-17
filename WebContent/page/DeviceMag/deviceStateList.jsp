@@ -158,7 +158,7 @@
 								正常运行
 							</td>
 							<td align="center" style="HEIGHT: 22px" align="center" width="10%">																	
-							   <a href="${pageContext.request.contextPath }/page/DeviceMag/deviceStateView.jsp">
+							   <a href="${pageContext.request.contextPath }/page/DeviceMag/deviceStateEdit.jsp">
 							   <img src="${pageContext.request.contextPath }/images/edit.gif" border="0" style="cursor:hand"></a>													
 							</td>
 							<td align="center" style="HEIGHT: 22px" align="center" width="10%">

@@ -133,7 +133,7 @@
 								A
 							</td>
 							<td align="center" style="HEIGHT: 22px" align="center" width="10%">																	
-							   <a href="${pageContext.request.contextPath }/page/DeviceMag/deviceInfoView.jsp">
+							   <a href="${pageContext.request.contextPath }/page/DeviceMag/deviceInfoEdit.jsp">
 							   <img src="${pageContext.request.contextPath }/images/edit.gif" border="0" style="cursor:hand"></a>													
 							</td>
 							<td align="center" style="HEIGHT: 22px" align="center" width="10%">

@@ -17,21 +17,27 @@ pub.css		公有的样式
 	1、主要管理的是设备
 	deviceInfoList.jsp	设备信息管理
 	deviceInfoAdd.jsp	添加设备信息
-	deviceInfoView.jsp	编辑、查看设备详细信息
+	deviceInfoAdd.jsp	编辑设备信息
+	deviceInfoView.jsp	查看设备详细信息
 	
 	2、主要管理设备的运行状态
 	deviceStateList.jsp	查看设备状态
 	deviceStateAdd.jsp	添加设备状态信息
-	deviceStateView.jsp	编辑、查看设备详细状态信息
+	deviceStateEdit.jsp	编辑设备状态信息
+	deviceStateView.jsp	查看设备详细状态信息
 	
 三、UserMag		用户信息管理
 	userInfoList.jsp	用户信息列表
 	userInfoAdd.jsp		添加用户信息
+	userInfoEdit.jsp	编辑用户信息
 	userInfoView.jsp	查看用户的详细信息
 	
 四、ReportingMag	申报管理
-	reportingBugInfo.jsp 		申报故障信息
-	reportingBugInfoList.jsp	故障信息列表
+	reportingBugInfo.jsp 			申报故障信息
+	reportingBugInfoAllList.jsp		所有故障信息列表
+	reportingBugInfoPassList.jsp	通过审核故障信息列表
+	reportingBugInfoRefuseList.jsp	未通过审核故障信息列表
+	reportingBugInfoWaitList.jsp	待审核故障信息列表
 
 五、AuthorityMag 权限管理
 

@@ -9,7 +9,7 @@
 <script type="text/javascript" src="${pageContext.request.contextPath }/js/uploadPreview/uploadPreview.js"></script>
 <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/css/pub.css" />
 
-<title>申报故障信息</title>
+<title>故障详细信息</title>
 <script>
    window.onload = function () { 
         new uploadPreview({ UpBtn: "up_img", DivShow: "imgdiv", ImgShow: "imgShow" });
@@ -23,7 +23,7 @@
     <table cellSpacing="1" cellPadding="5" width="580" align="center" bgColor="#eeeeee" style="border:1px solid #8ba7e3" border="0">
 		<tr>
 			<td class="ta_01" align="center" colSpan="4" background="${pageContext.request.contextPath }/images/b-info.gif">
-				<font face="宋体" size="2"><strong>申报故障信息</strong></font>
+				<font face="宋体" size="2"><strong>故障详细信息</strong></font>
 			</td>
 		</tr>
 	    <tr>
@@ -133,9 +133,10 @@
 		</TR>
 		<tr>
 			<td class="ta_01" style="WIDTH: 100%" align="center" bgColor="#f5fafe" colSpan="4">
-				<input type="button" name="BT_Submit" value="保存"  style="font-size:12px; color:black; height=22;width=55"   onClick="check_null()">
-				<font face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>
-				<input style="font-size:12px; color:black; height=22;width=55"  type="button" value="关闭"  name="Reset1"  onClick="custom_close()">
+			<input type="button" name="BT_Submit" value="保存"  style="font-size:12px; color:black; height=22;width=55"   onClick="check_null()">
+			 <FONT face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</FONT>
+			<input style="font-size:12px; color:black; height=22;width=55"  type="button" value="关闭"  name="Reset1"  onClick="custom_close()">
+				
 			</td>
 		</tr>
 	</table>　

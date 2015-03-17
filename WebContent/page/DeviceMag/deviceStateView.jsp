@@ -9,7 +9,7 @@
 <script type="text/javascript" src="${pageContext.request.contextPath }/js/uploadPreview/uploadPreview.js"></script>
 <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/css/pub.css" />
 
-<title>查看-修改设备状态信息</title>
+<title>查看设备状态信息</title>
 <script>
    window.onload = function () { 
         new uploadPreview({ UpBtn: "up_img", DivShow: "imgdiv", ImgShow: "imgShow" });
@@ -23,95 +23,77 @@
     <table cellSpacing="1" cellPadding="5" width="580" align="center" bgColor="#eeeeee" style="border:1px solid #8ba7e3" border="0">
 		<tr>
 			<td class="ta_01" align="center" colSpan="4" background="${pageContext.request.contextPath }/images/b-info.gif">
-				<font face="宋体" size="2"><strong>查看-修改设备状态信息</strong></font>
+				<font face="宋体" size="2"><strong>查看设备状态信息</strong></font>
 			</td>
 		</tr>
 	    <tr>
 	       <td align="center" bgColor="#f5fafe" class="ta_01">区&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;域：<font color="#FF0000">*</font></td>
 	       <td class="ta_01" bgColor="#ffffff">
-	       		<select id="area" name="area" style="width: 138px">
-					<option>------请选择------</option>				
-					<option>教室</option>				
-					<option>寝室</option>				
-					<option>机房</option>				
-				</select>
+	       		<input name="area" id="area" maxlength="25" size="20" value="教室" disabled="disabled">
 	       </td>
 	       <td align="center" bgColor="#f5fafe" class="ta_01">设&nbsp;&nbsp;备&nbsp;&nbsp;名：<font color="#FF0000">*</font></td>
 	       <td class="ta_01" bgColor="#ffffff">
-	       		<input name="deviceName" id="deviceName" maxlength="25" size="20">
+	       		<input name="deviceName" id="deviceName" maxlength="25" size="20" value="多媒体" disabled="disabled">
 	       </td>
 	    </tr>
 	    
 		<tr>
 			<td align="center" bgColor="#f5fafe" class="ta_01">型&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号：<font color="#FF0000">*</font></td>
 	       	<td class="ta_01" bgColor="#ffffff">
-	       		<input name="version" id="version" maxlength="25" size="20">
+	       		<input name="version" id="version" maxlength="25" size="20" value="WUYT" disabled="disabled">
 	      	</td>
 			<td align="center" bgColor="#f5fafe" class="ta_01">安装位置：<font color="#FF0000">*</font></td>
 	       	<td class="ta_01" bgColor="#ffffff">
-	       		<input name="installationSite" id="installationSite" maxlength="25" size="20">
+	       		<input name="installationSite" id="installationSite" maxlength="25" size="20" value="A4598" disabled="disabled">
 	       	</td>
 		</tr>
 		<tr>
 			<td align="center" bgColor="#f5fafe" class="ta_01">上次检修日期：<font color="#FF0000">*</font></td>
 	       	<td class="ta_01" bgColor="#ffffff">
-				<input class="Wdate" type="text" size="20" onclick="WdatePicker({readOnly:true,highLineWeekDay:false})">
+				<input class="Wdate" type="text" size="20" value="2015-09-15" disabled="disabled">
 	       	</td>
 		    <td align="center" bgColor="#f5fafe" class="ta_01">下次检修日期：</td>
 			<td class="ta_01" bgColor="#ffffff">
-				<input class="Wdate" type="text" size="20" onclick="WdatePicker({readOnly:true,highLineWeekDay:false})">
+				<input class="Wdate" type="text" size="20" value="2017-08-09" disabled="disabled">
 			</td>
 		</tr>
 		
 		<tr>
 			<td align="center" bgColor="#f5fafe" class="ta_01">安装日期：</td>
 			<td class="ta_01" bgColor="#ffffff">
-				<input class="Wdate" type="text" size="20" onclick="WdatePicker({readOnly:true,highLineWeekDay:false})">
+				<input class="Wdate" type="text" size="20" value="2014-04-23" disabled="disabled">
 			</td>
 		    <td align="center" bgColor="#f5fafe" class="ta_01">设备价格：</td>
 			<td class="ta_01" bgColor="#ffffff">
-				<input name="" id="" maxlength="25" size="20">
+				<input name="" id="" maxlength="25" size="20" value="6758" disabled="disabled">
 			</td>
 		</tr>
 		
 		<tr>
 			<td align="center" bgColor="#f5fafe" class="ta_01">生&nbsp;&nbsp;产&nbsp;&nbsp;商：<font color="#FF0000">*</font></td>
 	       	<td class="ta_01" bgColor="#ffffff">
-	       		<input name="producer" id="producer" maxlength="25" size="20">
+	       		<input name="producer" id="producer" maxlength="25" size="20" value="上海通用" disabled="disabled">
 	       	</td>
 			<td align="center" bgColor="#f5fafe" class="ta_01">优先级别：<font color="#FF0000">*</font></td>
 	       	<td class="ta_01" bgColor="#ffffff">
-	       		<input type="radio" name="rank" value="A">A&nbsp;&nbsp;
-	       		<input type="radio" name="rank" value="B">B&nbsp;&nbsp;
-	       		<input type="radio" name="rank" value="C">C&nbsp;&nbsp;
-	       		<input type="radio" name="rank" value="D">D&nbsp;&nbsp;
+	       		<input type="radio" name="rank" value="B" checked="checked">B&nbsp;&nbsp;
 	       	</td>
 		</tr>
 
 		<tr>
 			<td align="center" bgColor="#f5fafe" class="ta_01">运行状态：</td>
 			<td class="ta_01" bgColor="#ffffff">
-				<select id="state" name="state" style="width: 140px">
-					<option>------请选择------</option>				
-					<option>正常运行</option>				
-					<option>运行异常</option>				
-				</select>
+				<input name="state" id="state" maxlength="25" size="20" value="正常运行" disabled="disabled">
 			</td>
 			<td class="ta_01" align="center" bgcolor="#f5fafe">设备图片：</td>
 			<td class="ta_01" bgcolor="#ffffff" colspan="3">
-				<input type="file" id="up_img" />
-			</td>
-		</tr>
-		<tr>
-			<td class="ta_01" align="center" bgcolor="#f5fafe">上传的图片：</td>
-			<td class="ta_01" bgcolor="#ffffff" colspan="3">
-				<div id="imgdiv"><img id="imgShow" width="500px" height="300px" /></div>
+				<img alt="" src="">
 			</td>
 		</tr>
 		<tr>
 			<td class="ta_01" align="center" bgcolor="#f5fafe">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注：</td>
 			<td class="ta_01" bgcolor="#ffffff" colspan="3">
-				<textarea name="remark" id="remark" style="width:95%" rows="4" cols="52"></textarea>
+				<textarea name="remark" id="remark" style="width:95%" rows="4" cols="52" disabled="disabled">sfefsfsefsefsefsefs</textarea>
 			</td>
 		</tr>
 		
@@ -120,10 +102,8 @@
 		</TR>
 		<tr>
 			<td class="ta_01" style="WIDTH: 100%" align="center" bgColor="#f5fafe" colSpan="4">
-			<input type="button" name="BT_Submit" value="保存"  style="font-size:12px; color:black; height=22;width=55"   onClick="check_null()">
-			 <FONT face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</FONT>
-			<input style="font-size:12px; color:black; height=22;width=55"  type="button" value="关闭"  name="Reset1"  onClick="custom_close()">
-				
+				<font face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>
+				<input style="font-size:12px; color:black; height=22;width=55"  type="button" value="返回"  name="Reset1"  onClick="history.back()">
 			</td>
 		</tr>
 	</table>　
