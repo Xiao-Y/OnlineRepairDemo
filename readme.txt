@@ -1,5 +1,8 @@
 此文件主要用于在线申报系统的原型设计
 
+访问路径：
+http://localhost:8090/OnlineRepairDemo/index.jsp
+
 js文件：
 My97DatePicker	日历
 uploadPreview	上传图片预览
