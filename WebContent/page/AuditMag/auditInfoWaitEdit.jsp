@@ -9,7 +9,7 @@
 <script type="text/javascript" src="${pageContext.request.contextPath }/js/uploadPreview/uploadPreview.js"></script>
 <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/css/pub.css" />
 
-<title>故障详细信息</title>
+<title>编辑故障信息</title>
 <script>
    window.onload = function () { 
         new uploadPreview({ UpBtn: "up_img", DivShow: "imgdiv", ImgShow: "imgShow" });
@@ -23,87 +23,76 @@
     <table cellSpacing="1" cellPadding="5" width="580" align="center" bgColor="#eeeeee" style="border:1px solid #8ba7e3" border="0">
 		<tr>
 			<td class="ta_01" align="center" colSpan="4" background="${pageContext.request.contextPath }/images/b-info.gif">
-				<font face="宋体" size="2"><strong>故障详细信息</strong></font>
+				<font face="宋体" size="2"><strong>编辑故障信息</strong></font>
 			</td>
 		</tr>
 	    <tr>
 	       <td align="center" bgColor="#f5fafe" class="ta_01">区&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;域：<font color="#FF0000">*</font></td>
 	       <td class="ta_01" bgColor="#ffffff">
-	       		<select id="area" name="area" style="width: 138px">
-					<option>------请选择------</option>				
-					<option>教室</option>				
-					<option>寝室</option>				
-					<option>机房</option>				
-				</select>
-	       </td>
+				<input class="" type="text" size="20" id="area" name="area" value="教室" disabled="disabled">
+			</td>
+			
 	       <td align="center" bgColor="#f5fafe" class="ta_01">设&nbsp;&nbsp;备&nbsp;&nbsp;名：<font color="#FF0000">*</font></td>
-	       <td class="ta_01" bgColor="#ffffff">
-	       		<select id="deviceName" name="deviceName" style="width: 138px">
-					<option>------请选择------</option>				
-					<option>计算机</option>				
-					<option>灯管</option>				
-					<option>空调</option>				
-					<option>电视</option>				
-					<option>风扇</option>				
-					<option>桌子</option>				
-				</select>
-	       </td>
+	        <td class="ta_01" bgColor="#ffffff">
+				<input class="" type="text" size="20" id="deviceName" name="deviceName" value="计算机" disabled="disabled">
+			</td>
 	    </tr>
 	    
 		<tr>
 			<td align="center" bgColor="#f5fafe" class="ta_01">型&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号：<font color="#FF0000">*</font></td>
-	       	<td class="ta_01" bgColor="#ffffff">
-	       		<select id="version" name="version" style="width: 138px">
-					<option>------请选择------</option>				
-					<option>A232</option>				
-					<option>DE34</option>				
-					<option>23HY</option>				
-					<option>8UY6</option>				
-					<option>CCDG</option>				
-					<option>MMHH</option>				
-				</select>
-	      	</td>
+			 <td class="ta_01" bgColor="#ffffff">
+				<input class="" type="text" size="20" id="version" name="version" value="A232" disabled="disabled">
+			</td>
+			
 			<td align="center" bgColor="#f5fafe" class="ta_01">安装位置：<font color="#FF0000">*</font></td>
-	       	<td class="ta_01" bgColor="#ffffff">
-	       		<select id="installationSite" name="installationSite" style="width: 138px">
-					<option>------请选择------</option>				
-					<option>教室</option>				
-					<option>实验室</option>				
-					<option>机房</option>				
-					<option>办公室</option>				
-					<option>寝室</option>				
-					<option>教学楼</option>				
-				</select>
-	       	</td>
+			<td class="ta_01" bgColor="#ffffff">
+				<input class="" type="text" size="20" id="installationSite" name="installationSite" value="实验室" disabled="disabled">
+			</td>
+		</tr>
+		<tr>
+			<td align="center" bgColor="#f5fafe" class="ta_01">申报日期：</td>
+			<td class="ta_01" bgColor="#ffffff">
+				<input class="Wdate" type="text" size="20" value="2015-03-18" disabled="disabled">
+			</td>
+			
+		    <td align="center" bgColor="#f5fafe" class="ta_01">申报人联系方式：</td>
+			<td class="ta_01" bgColor="#ffffff">
+				<input class="" type="text" size="20" id="phone" name="phone"  value="12322133234" disabled="disabled">
+			</td>
 		</tr>
 		<tr>
 			<td align="center" bgColor="#f5fafe" class="ta_01">维护类别：<font color="#FF0000">*</font></td>
-	       	<td class="ta_01" bgColor="#ffffff">
+			<td class="ta_01" bgColor="#ffffff">
 				<select id="maintainType" name="maintainType" style="width: 138px">
 					<option>------请选择------</option>				
 					<option>电工</option>				
-					<option>水工</option>				
 					<option>木工</option>				
 					<option>泥工</option>				
-					<option>维护</option>				
-					<option>多媒体</option>				
+					<option>水工</option>				
 				</select>
-	       	</td>
-		    <td align="center" bgColor="#f5fafe" class="ta_01">申报人联系方式：</td>
+			</td>
+			
+			<td align="center" bgColor="#f5fafe" class="ta_01">维护人员：<font color="#FF0000">*</font></td>
 			<td class="ta_01" bgColor="#ffffff">
-				<input class="" type="text" size="20" id="phone" name="phone">
+				<select id="maintainType" name="maintainType" style="width: 138px">
+					<option>------请选择------</option>				
+					<option>admin</option>				
+					<option>cat</option>				
+					<option>jetty</option>				
+					<option>tome</option>				
+				</select>
 			</td>
 		</tr>
 		
 		<tr>
-			<td align="center" bgColor="#f5fafe" class="ta_01">安装日期：</td>
+			<td align="center" bgColor="#f5fafe" class="ta_01">维护人员联系方式：</td>
 			<td class="ta_01" bgColor="#ffffff">
-				<input class="Wdate" type="text" size="20" onclick="WdatePicker({readOnly:true,highLineWeekDay:false})">
+				<input type="text" name="test" value="13888277788" disabled="disabled">
 			</td>
-			
-		    <td class="ta_01" align="center" bgcolor="#f5fafe">设备图片：</td>
-			<td class="ta_01" bgcolor="#ffffff" colspan="3">
-				<input type="file" id="up_img" />
+			<td align="center" bgColor="#f5fafe" class="ta_01">审核状态：</td>
+			<td class="ta_01" bgColor="#ffffff">
+				<input type="radio" name="test" value="通过" checked="checked">通过&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="radio" name="test" value="驳回">驳回&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			</td>
 		</tr>
 		
@@ -117,12 +106,19 @@
 		<tr>
 			<td class="ta_01" align="center" bgcolor="#f5fafe">故障原因：</td>
 			<td class="ta_01" bgcolor="#ffffff" colspan="3">
-				<textarea name="account" id="account" style="width:95%" rows="4" cols="52"></textarea>
+				<textarea name="account" id="account" style="width:95%" rows="4" cols="52" disabled="disabled">rerggdrgrgd</textarea>
 			</td>
 		</tr>
 		
 		<tr>
 			<td class="ta_01" align="center" bgcolor="#f5fafe">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注：</td>
+			<td class="ta_01" bgcolor="#ffffff" colspan="3">
+				<textarea name="remark" id="remark" style="width:95%" rows="4" cols="52" disabled="disabled">asdawdawdawdad</textarea>
+			</td>
+		</tr>
+		
+		<tr>
+			<td class="ta_01" align="center" bgcolor="#f5fafe">驳回原因：</td>
 			<td class="ta_01" bgcolor="#ffffff" colspan="3">
 				<textarea name="remark" id="remark" style="width:95%" rows="4" cols="52"></textarea>
 			</td>
@@ -134,8 +130,8 @@
 		<tr>
 			<td class="ta_01" style="WIDTH: 100%" align="center" bgColor="#f5fafe" colSpan="4">
 			<input type="button" name="BT_Submit" value="保存"  style="font-size:12px; color:black; height=22;width=55"   onClick="check_null()">
-			 <FONT face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</FONT>
-			<input style="font-size:12px; color:black; height=22;width=55"  type="button" value="关闭"  name="Reset1"  onClick="custom_close()">
+			<FONT face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</FONT>
+			<input style="font-size:12px; color:black; height=22;width=55"  type="button" value="关闭"  name="Reset1"  onClick="history.back()">
 				
 			</td>
 		</tr>

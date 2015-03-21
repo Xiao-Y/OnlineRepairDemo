@@ -60,17 +60,28 @@
 					</select>
 				</td>
 				<td class="ta_01" align="center" bgcolor="#f5fafe" height="22">
+				安装位置：</td>
+				<td class="ta_01" >
+					<select id="rank" name="rank" style="width: 140px">
+						<option>------请选择------</option>				
+						<option>A7884</option>				
+						<option>B2322</option>				
+						<option>C1988</option>				
+						<option>D1212</option>				
+					</select>
+				</td>
+				<td class="ta_01" align="center" bgcolor="#f5fafe" height="22">
 				设备名：</td>
 				<td class="ta_01" >
 					<input name="deviceName" id="deviceName" size="21">
 				</td>
+			</tr>
+			<tr>
 				<td class="ta_01" align="center" bgcolor="#f5fafe" height="22">
 				型号：</td>
 				<td class="ta_01" >
 					<input name="version" id="version" size="21">
 				</td>
-			</tr>
-			<tr>
 				<td class="ta_01" align="center" bgcolor="#f5fafe" height="21">
 				安装日期：</td>
 				<td class="ta_01" >
@@ -83,17 +94,6 @@
 						<option>------请选择------</option>				
 						<option>正常运行</option>				
 						<option>运行异常</option>				
-					</select>
-				</td>
-				<td class="ta_01" align="center" bgcolor="#f5fafe" height="22">
-				优先级别：</td>
-				<td class="ta_01" >
-					<select id="rank" name="rank" style="width: 140px">
-						<option>------请选择------</option>				
-						<option>A</option>				
-						<option>B</option>				
-						<option>C</option>				
-						<option>D</option>				
 					</select>
 				</td>
 			</tr>
@@ -127,6 +127,7 @@
 						<!-- 列表标题 begin -->
 						<tr style="font-weight:bold;font-size:12pt;height:25px;background-color:#afd1f3">
 						  <td align="center" width="10%" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">区域</td>
+						  <td align="center" width="10%" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">安装位置</td>
 						  <td align="center" width="20%" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">设备名</td>
 							<td align="center" width="20%" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">型号</td>
 							<td align="center" width="10%" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">安装日期</td>
@@ -144,6 +145,9 @@
 							<td style="height:22px" align="center" width="10%">
 								教室
 							</td>
+							<td style="height:22px" align="center" width="10%">
+								A1049
+							</td>
 							<td style="height:22px" align="center" width="20%">
 								<input type="hidden" id="123">
 								<a href="${pageContext.request.contextPath }/page/DeviceMag/deviceStateView.jsp">格力空调</a>
@@ -151,7 +155,7 @@
 							<td style="height:22px" align="center" width="10%">
 								1.5P
 							</td>
-							<td style="height:22px" align="center" width="20%">
+							<td style="height:22px" align="center" width="10%">
 								2015-01-12
 							</td>									
 							<td style="height:22px" align="center" width="10%">

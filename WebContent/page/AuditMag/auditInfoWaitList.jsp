@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>故障信息列表</title>
+<title>待审核故障信息列表</title>
 
 <script type="text/javascript" src="${pageContext.request.contextPath }/js/jquery-1.8.0.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath }/js/myJquery.js"></script>
@@ -46,13 +46,23 @@
 		<table cellspacing="1" cellpadding="0" width="90%" align="center" bgcolor="#f5fafe" border="0">
 			<tr>
 				<td class="ta_01" colspan=9 align="center" background="${pageContext.request.contextPath }/images/b-info.gif">
-					<font face="宋体" size="2"><strong>待审核故障信息</strong></font>
+					<font face="宋体" size="2"><strong>待审核故障信息列表</strong></font>
 				</td>
 			</tr>
 			<tr height=10>
 				<td></td>
 			</tr>
 			<tr>
+				<td class="ta_01" align="center" bgcolor="#f5fafe" height="22">
+				区域：</td>
+				<td class="ta_01" >
+					<select id="role" name="role" style="width: 140px">
+						<option>------请选择------</option>				
+						<option>教室</option>				
+						<option>寝室</option>				
+						<option>机房</option>				
+					</select>
+				</td>
 				<td class="ta_01" align="center" bgcolor="#f5fafe" height="22">
 				设备名：</td>
 				<td class="ta_01" >
@@ -76,15 +86,9 @@
 					<input name="loginName" id="loginName" size="21">
 				</td>
 				<td class="ta_01" align="center" bgcolor="#f5fafe" height="22">
-				维护类别：</td>
+				申报时间：</td>
 				<td class="ta_01" >
-					<select id="maintainType" name="maintainType" style="width: 140px">
-						<option>------请选择------</option>				
-						<option>电工</option>				
-						<option>水工</option>				
-						<option>泥工</option>				
-						<option>木工</option>				
-					</select>
+					<input class="Wdate" type="text" size="21" onclick="WdatePicker({readOnly:true,highLineWeekDay:false})">
 				</td>
 			</tr>
 	    </table>	
@@ -105,14 +109,9 @@
 		             </table>
 	            </td>
 				<td class="ta_01" align="right">
-				    <input style="font-size:12px; color:black; height=20;width=80" id="BT_Find" type="button" value="全部审核" name="BT_Find" onclick="link('${pageContext.request.contextPath }/page/ReportingMag/reportingBugInfoAllList.jsp')">&nbsp;&nbsp;
-					<input style="font-size:12px; color:blue; height=20;width=80" id="BT_Add" type="button" value="待审核" name="BT_Add">&nbsp;&nbsp;
-					<input style="font-size:12px; color:black; height=20;width=80" id="BT_Add" type="button" value="已通过审核" name="BT_Add" onclick="link('${pageContext.request.contextPath }/page/ReportingMag/reportingBugInfoPassList.jsp')">&nbsp;&nbsp;
-				    <input style="font-size:12px; color:black; height=20;width=80" id="BT_Reset" type="button" value="未通过审核" name="BT_Reset" onclick="link('${pageContext.request.contextPath }/page/ReportingMag/reportingBugInfoRefuseList.jsp')">&nbsp;&nbsp;&nbsp;&nbsp;
 				    
 				    <input style="font-size:12px; color:black; height=20;width=80" id="BT_Find" type="button" value="查询" name="BT_Find" >&nbsp;&nbsp;
 				    <input style="font-size:12px; color:black; height=20;width=80" id="BT_Reset" type="button" value="清除" name="BT_Reset" >&nbsp;&nbsp;
-					<input style="font-size:12px; color:black; height=20;width=80" id="BT_Add" type="button" value="添加申报信息" name="BT_Add" onclick="openWindow('${pageContext.request.contextPath }/page/ReportingMag/reportingBugInfo.jsp')">
 				</td>
 			</tr>
 			<tr>
@@ -121,12 +120,12 @@
 						style="border-right:gray 1px solid; border-top:gray 1px solid; border-left:gray 1px solid; width:100%; word-break:break-all; border-bottom:gray 1px solid; border-collapse:collapse; background-color:#f5fafe; word-wrap:break-word">
 						<!-- 列表标题 begin -->
 						<tr style="font-weight:bold;font-size:12pt;height:25px;background-color:#afd1f3">
-						    <td align="center" width="15%" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">设备名</td>
+						    <td align="center" width="15%" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">区域</td>
 							<td align="center" width="15%" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">安装位置</td>
-							<td align="center" width="10%" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">申报人</td>
+						    <td align="center" width="15%" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">设备名</td>
+							<td align="center" width="15%" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">申报人</td>
 							<td align="center" width="15%" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">申报人联系方式</td>
 							<td align="center" width="15%" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">申报时间</td>
-							<td align="center" width="10%" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">详细信息</td>
 							<td align="center" width="5%"  height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">编辑</td>
 							<td align="center" width="5%"  height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">删除</td>
 						</tr>
@@ -138,13 +137,16 @@
 						%>
 						<tr onmouseover="this.style.backgroundColor = 'white'" onmouseout="this.style.backgroundColor = '#F5FAFE';">
 							<td style="height:22px" align="center" width="15%">
-								<input type="hidden" id="123">
-								<a href="${pageContext.request.contextPath }/page/DeviceMag/deviceInfoView.jsp">多媒体</a>
+								教室
 							</td>
 							<td style="height:22px" align="center" width="15%">
 								A4059
 							</td>
-							<td style="height:22px" align="center" width="10%">
+							<td style="height:22px" align="center" width="15%">
+								<input type="hidden" id="123">
+								<a href="${pageContext.request.contextPath }/page/AuditMag/auditInfoWaitView.jsp">多媒体</a>
+							</td>
+							<td style="height:22px" align="center" width="15%">
 								<a href="${pageContext.request.contextPath }/page/UserMag/userInfoView.jsp">XiaoY</a>
 							</td>									
 							<td style="height:22px" align="center" width="15%">
@@ -153,11 +155,8 @@
 							<td style="height:22px" align="center" width="15%">
 								2015-03-09
 							</td>										
-							<td style="height:22px" align="center" width="10%">
-								<a href="${pageContext.request.contextPath }/page/ReportingMag/reportingBugView.jsp">详细信息</a>
-							</td>									
 							<td align="center" style="HEIGHT: 22px" align="center" width="5%">																	
-							   <a href="${pageContext.request.contextPath }/page/UserMag/userInfoView.jsp">
+							   <a href="${pageContext.request.contextPath }/page/AuditMag/auditInfoWaitEdit.jsp">
 							   <img src="${pageContext.request.contextPath }/images/edit.gif" border="0" style="cursor:hand"></a>													
 							</td>
 							<td align="center" style="HEIGHT: 22px" align="center" width="5%">

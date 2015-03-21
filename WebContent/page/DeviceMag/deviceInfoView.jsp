@@ -40,22 +40,31 @@
 	    </tr>
 	    
 		<tr>
-		    <td align="center" bgColor="#f5fafe" class="ta_01">设备价格：</td>
+		    <td align="center" bgColor="#f5fafe" class="ta_01">设备负责人：</td>
 			<td class="ta_01" bgColor="#ffffff">
-				<input name="" id="" maxlength="25" size="20" value="12880" disabled="disabled">
+				<input name="" id="" maxlength="25" size="20">
 			</td>
 			<td align="center" bgColor="#f5fafe" class="ta_01">生&nbsp;&nbsp;产&nbsp;&nbsp;商：<font color="#FF0000">*</font></td>
 	       	<td class="ta_01" bgColor="#ffffff">
 	       		<input name="producer" id="producer" maxlength="25" size="20" value="日本" disabled="disabled">
 	       	</td>
 		</tr>
-		
 		<tr>
-			<td align="center" bgColor="#f5fafe" class="ta_01">优先级别：<font color="#FF0000">*</font></td>
+	       	<td align="center" bgColor="#f5fafe" class="ta_01">负责人联系方式：</td>
+			<td class="ta_01" bgColor="#ffffff">
+				<input name="" id="" maxlength="25" size="20" value="9079798889" disabled="disabled">
+			</td>
+	       	<td align="center" bgColor="#f5fafe" class="ta_01">生产商联系方式：<font color="#FF0000">*</font></td>
 	       	<td class="ta_01" bgColor="#ffffff">
-	       		<input type="radio" name="rank" value="A" checked="checked">A&nbsp;&nbsp;
+	       		<input name="" id="" maxlength="25" size="20" value="8977899898" disabled="disabled">
 	       	</td>
-			<td align="center" bgColor="#f5fafe" class="ta_01">设备数量：：</td>
+		</tr>
+		<tr>
+			<td align="center" bgColor="#f5fafe" class="ta_01">设备价格：</td>
+			<td class="ta_01" bgColor="#ffffff">
+				<input name="" id="" maxlength="25" size="20" value="12880" disabled="disabled">
+			</td>
+			<td align="center" bgColor="#f5fafe" class="ta_01">设备数量：</td>
 			<td class="ta_01" bgColor="#ffffff">
 				<input name="" id="" maxlength="25" size="20" value="45" disabled="disabled">
 			</td>
@@ -64,7 +73,6 @@
 		<tr>
 			<td class="ta_01" align="center" bgcolor="#f5fafe">设备图片：</td>
 			<td class="ta_01" bgcolor="#ffffff" colspan="3">
-				<input type="file" id="up_img" />
 				<img alt="" src="">
 			</td>
 		</tr>

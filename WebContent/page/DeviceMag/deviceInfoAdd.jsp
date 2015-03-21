@@ -42,7 +42,7 @@
 	    </tr>
 	    
 		<tr>
-		    <td align="center" bgColor="#f5fafe" class="ta_01">设备价格：</td>
+		    <td align="center" bgColor="#f5fafe" class="ta_01">设备负责人：</td>
 			<td class="ta_01" bgColor="#ffffff">
 				<input name="" id="" maxlength="25" size="20">
 			</td>
@@ -51,16 +51,24 @@
 	       		<input name="" id="" maxlength="25" size="20">
 	       	</td>
 		</tr>
+		<tr>
+	       	<td align="center" bgColor="#f5fafe" class="ta_01">负责人联系方式：</td>
+			<td class="ta_01" bgColor="#ffffff">
+				<input name="" id="" maxlength="25" size="20">
+			</td>
+	       	<td align="center" bgColor="#f5fafe" class="ta_01">生产商联系方式：<font color="#FF0000">*</font></td>
+	       	<td class="ta_01" bgColor="#ffffff">
+	       		<input name="" id="" maxlength="25" size="20">
+	       	</td>
+		</tr>
 		
 		<tr>
-			<td align="center" bgColor="#f5fafe" class="ta_01">优先级别：<font color="#FF0000">*</font></td>
-	       	<td class="ta_01" bgColor="#ffffff">
-	       		<input type="radio" name="rank" value="A">A&nbsp;&nbsp;
-	       		<input type="radio" name="rank" value="B">B&nbsp;&nbsp;
-	       		<input type="radio" name="rank" value="C">C&nbsp;&nbsp;
-	       		<input type="radio" name="rank" value="D">D&nbsp;&nbsp;
-	       	</td>
 			<td align="center" bgColor="#f5fafe" class="ta_01">设备数量：</td>
+			<td class="ta_01" bgColor="#ffffff">
+				<input name="" id="" maxlength="25" size="20">
+			</td>
+			
+			<td align="center" bgColor="#f5fafe" class="ta_01">设备单价：</td>
 			<td class="ta_01" bgColor="#ffffff">
 				<input name="" id="" maxlength="25" size="20">
 			</td>

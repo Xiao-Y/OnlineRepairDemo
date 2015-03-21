@@ -9,7 +9,7 @@
 <script type="text/javascript" src="${pageContext.request.contextPath }/js/uploadPreview/uploadPreview.js"></script>
 <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/css/pub.css" />
 
-<title>修改设备状态信息</title>
+<title>编辑故障信息</title>
 <script>
    window.onload = function () { 
         new uploadPreview({ UpBtn: "up_img", DivShow: "imgdiv", ImgShow: "imgShow" });
@@ -23,19 +23,20 @@
     <table cellSpacing="1" cellPadding="5" width="580" align="center" bgColor="#eeeeee" style="border:1px solid #8ba7e3" border="0">
 		<tr>
 			<td class="ta_01" align="center" colSpan="4" background="${pageContext.request.contextPath }/images/b-info.gif">
-				<font face="宋体" size="2"><strong>修改设备状态信息</strong></font>
+				<font face="宋体" size="2"><strong>编辑故障信息</strong></font>
 			</td>
 		</tr>
 	    <tr>
 	       <td align="center" bgColor="#f5fafe" class="ta_01">区&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;域：<font color="#FF0000">*</font></td>
-	       <td class="ta_01" bgColor="#ffffff">
-	       		<select id="area" name="area" style="width: 138px">
+	       	<td class="ta_01" bgColor="#ffffff">
+				<select id="area" name="area" style="width: 138px">
 					<option>------请选择------</option>				
 					<option>教室</option>				
-					<option  selected="selected">寝室</option>				
+					<option selected="selected">寝室</option>				
 					<option>机房</option>				
 				</select>
-	       </td>
+			</td>
+			
 	       <td align="center" bgColor="#f5fafe" class="ta_01">设&nbsp;&nbsp;备&nbsp;&nbsp;名：<font color="#FF0000">*</font></td>
 	       <td class="ta_01" bgColor="#ffffff">
 	       		<select id="deviceName" name="deviceName" style="width: 138px">
@@ -63,6 +64,7 @@
 					<option>MMHH</option>				
 				</select>
 	      	</td>
+	      	
 			<td align="center" bgColor="#f5fafe" class="ta_01">安装位置：<font color="#FF0000">*</font></td>
 	       	<td class="ta_01" bgColor="#ffffff">
 	       		<select id="installationSite" name="installationSite" style="width: 138px">
@@ -77,35 +79,30 @@
 	       	</td>
 		</tr>
 		<tr>
-			<td align="center" bgColor="#f5fafe" class="ta_01">上次检修日期：<font color="#FF0000">*</font></td>
-	       	<td class="ta_01" bgColor="#ffffff">
-				<input class="Wdate" type="text" size="20" onclick="WdatePicker({readOnly:true,highLineWeekDay:false})">
-	       	</td>
-		    <td align="center" bgColor="#f5fafe" class="ta_01">下次检修日期：</td>
+		    <td align="center" bgColor="#f5fafe" class="ta_01">申报人联系方式：</td>
+			<td class="ta_01" bgColor="#ffffff">
+				<input class="" type="text" size="20" id="phone" name="phone" value="1554551655">
+			</td>
+			
+			<td align="center" bgColor="#f5fafe" class="ta_01">希望处理日期：</td>
 			<td class="ta_01" bgColor="#ffffff">
 				<input class="Wdate" type="text" size="20" onclick="WdatePicker({readOnly:true,highLineWeekDay:false})">
 			</td>
 		</tr>
 		
 		<tr>
-			<td align="center" bgColor="#f5fafe" class="ta_01">安装日期：</td>
+			<td align="center" bgColor="#f5fafe" class="ta_01">优先级别：</td>
 			<td class="ta_01" bgColor="#ffffff">
-				<input class="Wdate" type="text" size="20" onclick="WdatePicker({readOnly:true,highLineWeekDay:false})">
-			</td>
-			<td align="center" bgColor="#f5fafe" class="ta_01">运行状态：</td>
-			<td class="ta_01" bgColor="#ffffff">
-				<select id="state" name="state" style="width: 140px">
-					<option>------请选择------</option>				
-					<option>正常运行</option>				
-					<option>运行异常</option>				
-				</select>
+				<input type="radio" name="rank" value="A">高&nbsp;&nbsp;&nbsp;&nbsp;
+	       		<input type="radio" name="rank" value="B">中&nbsp;&nbsp;&nbsp;&nbsp;
+	       		<input type="radio" name="rank" value="C"  checked="checked">低&nbsp;&nbsp;&nbsp;&nbsp;
 			</td>
 		</tr>
 		
 		<tr>
-			<td class="ta_01" align="center" bgcolor="#f5fafe">设备图片：</td>
+			<td class="ta_01" align="center" bgcolor="#f5fafe">上传的图片：</td>
 			<td class="ta_01" bgcolor="#ffffff" colspan="3">
-				<div id="imgdiv"><img id="Show" width="500px" height="300px"/></div>
+				<div id="imgdiv"><img id="show" width="500px" height="300px" /></div>
 			</td>
 		</tr>
 		<tr>
@@ -120,6 +117,14 @@
 				<div id="imgdiv"><img id="imgShow" width="500px" height="300px"/></div>
 			</td>
 		</tr>
+		
+		<tr>
+			<td class="ta_01" align="center" bgcolor="#f5fafe">故障原因：</td>
+			<td class="ta_01" bgcolor="#ffffff" colspan="3">
+				<textarea name="account" id="account" style="width:95%" rows="4" cols="52"></textarea>
+			</td>
+		</tr>
+		
 		<tr>
 			<td class="ta_01" align="center" bgcolor="#f5fafe">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注：</td>
 			<td class="ta_01" bgcolor="#ffffff" colspan="3">
@@ -134,7 +139,7 @@
 			<td class="ta_01" style="WIDTH: 100%" align="center" bgColor="#f5fafe" colSpan="4">
 			<input type="button" name="BT_Submit" value="保存"  style="font-size:12px; color:black; height=22;width=55"   onClick="check_null()">
 			 <FONT face="宋体">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</FONT>
-			<input style="font-size:12px; color:black; height=22;width=55"  type="button" value="返回"  name="Reset1"  onClick="history.back()">
+			<input style="font-size:12px; color:black; height=22;width=55"  type="button" value="关闭"  name="Reset1"  onClick="history.back();">
 				
 			</td>
 		</tr>

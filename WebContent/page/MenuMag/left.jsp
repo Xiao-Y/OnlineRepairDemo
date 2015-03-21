@@ -9,9 +9,11 @@
 <!-- 切换折叠 -->
 <script type="text/javascript">
 	$().ready(function() {
+		//左侧菜单栏初始状为关闭
 		var open = "${pageContext.request.contextPath }/images/open.gif";
 		var add = "${pageContext.request.contextPath }/images/add.gif";
 		$(".qx_list").hide();
+		
 		$(".qx").click(function() {
 			var id = $(this).attr("id");
 			$(this).next().toggle(0,
@@ -129,7 +131,7 @@
 						</tr>
 						<tr height="25">
 							<td class="box05" onmouseover="backgroundColorChange(this,'#AAAAAA');" onmouseout="backgroundColorChange(this,'');">
-								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/ReportingMag/reportingBugInfoAllList.jsp' target="main">故障信息列表</a>
+								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/ReportingMag/reportingBugInfoList.jsp' target="main">故障信息列表</a>
 							</td>
 						</tr>
 					</table>
@@ -153,12 +155,46 @@
 					<table cellSpacing="0" cellPadding="0" width="99%" border="0">
 						<tr height="25">
 							<td class="box05" onmouseover="backgroundColorChange(this,'#AAAAAA');" onmouseout="backgroundColorChange(this,'');">
-								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/UserMag/deviceInfoList.jsp' target="main">审核列表</a>
+								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/AuditMag/auditInfoWaitList.jsp' target="main">待审核</a>
+							</td>
+						</tr>
+						<tr height="25">
+							<td class="box05" onmouseover="backgroundColorChange(this,'#AAAAAA');" onmouseout="backgroundColorChange(this,'');">
+								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/AuditMag/auditInfoPassList.jsp' target="main">审核通过</a>
+							</td>
+						</tr>
+						<tr height="25">
+							<td class="box05" onmouseover="backgroundColorChange(this,'#AAAAAA');" onmouseout="backgroundColorChange(this,'');">
+								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/AuditMag/auditInfoRefuseList.jsp' target="main">审核未通过</a>
 							</td>
 						</tr>
 					</table>
 				</div>
 				<!-- 故障申报审核 end  -->
+				
+				<!-- 评价留言管理 begin -->
+				<div class="qx" id="evaluateMagParent">
+					<table cellSpacing="0" cellPadding="0" width="100%" border="0">
+						<tr height=25>
+							<td align="left" background="${pageContext.request.contextPath }/images/b-info.gif"  vAlign="middle">
+								<div class="img">
+									&nbsp;<img src="${pageContext.request.contextPath }/images/add.gif" name="evaluateMagParent" width="8" height="9" alt="" border="0" />
+									评价留言管理
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="qx_list" id="evaluaterMagChild">
+					<table cellSpacing="0" cellPadding="0" width="99%" border="0">
+						<tr height="25">
+							<td class="box05" onmouseover="backgroundColorChange(this,'#AAAAAA');" onmouseout="backgroundColorChange(this,'');">
+								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/EvaluateMag/evaluateInfoList.jsp' target="main">我的评价</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<!-- 评价留言管理 end -->
 				
 				<!-- 权限管理 begin -->
 				<div class="qx" id="authorityMagParent">

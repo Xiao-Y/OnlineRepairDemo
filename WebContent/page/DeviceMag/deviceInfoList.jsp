@@ -59,21 +59,14 @@
 				</td>
 			</tr>
 			<tr>
+				 <td class="ta_01" align="center" bgcolor="#f5fafe" height="22">设备负责人：</td>
+				<td class="ta_01" bgColor="#ffffff">
+					<input name="" id="" maxlength="25" size="21">
+				</td>
 				<td class="ta_01" align="center" bgcolor="#f5fafe" height="22">
 				生产商：</td>
 				<td class="ta_01" >
 					<input name="producer" id="producer" size="21">
-				</td>
-				<td class="ta_01" align="center" bgcolor="#f5fafe" height="22">
-				优先级别：</td>
-				<td class="ta_01" >
-					<select id="rank" name="rank" style="width: 140px">
-						<option>------请选择------</option>				
-						<option>A</option>				
-						<option>B</option>				
-						<option>C</option>				
-						<option>D</option>				
-					</select>
 				</td>
 			</tr>
 	    </table>	
@@ -107,8 +100,10 @@
 						<tr style="font-weight:bold;font-size:12pt;height:25px;background-color:#afd1f3">
 						  <td align="center" width="20%" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">设备名</td>
 							<td align="center" width="20%" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">型号</td>
+							<td align="center" width="10%" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">设备负责人</td>
+							<td align="center" width="10%" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">负责人联系方式</td>
+							<td align="center" width="10%" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">设备数量(件)</td>
 							<td align="center" width="10%" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">设备价格</td>
-							<td align="center" width="10%" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">优先级别</td>
 							<td width="10%" align="center" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">编辑</td>
 							<td width="10%" align="center" height=22 background="${pageContext.request.contextPath }/images/tablehead.jpg">删除</td>
 						</tr>
@@ -123,15 +118,21 @@
 								<input type="hidden" id="123">
 								<a href="${pageContext.request.contextPath }/page/DeviceMag/deviceInfoView.jsp">灯管</a>
 							</td>
-							<td style="height:22px" align="center" width="10%">
+							<td style="height:22px" align="center" width="20%">
 								15W
 							</td>
-							<td style="height:22px" align="center" width="20%">
-								6139.36
+							<td style="height:22px" align="center" width="10%">
+								<a href="${pageContext.request.contextPath }/page/UserMag/userInfoView.jsp">admin</a>
 							</td>									
 							<td style="height:22px" align="center" width="10%">
-								A
-							</td>
+								7766222344
+							</td>									
+							<td style="height:22px" align="center" width="10%">
+								54666
+							</td>									
+							<td style="height:22px" align="center" width="10%">
+								6139.36
+							</td>									
 							<td align="center" style="HEIGHT: 22px" align="center" width="10%">																	
 							   <a href="${pageContext.request.contextPath }/page/DeviceMag/deviceInfoEdit.jsp">
 							   <img src="${pageContext.request.contextPath }/images/edit.gif" border="0" style="cursor:hand"></a>													
