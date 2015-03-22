@@ -30,15 +30,15 @@
 
 			<iframe width="100%" height="8%" src="${pageContext.request.contextPath }/page/MenuMag/buttom.jsp" scrolling="no"></iframe>
  --%>
-<frameset border=0 frameSpacing="0" rows="85,*"frameBorder="1" id="mainparent">
-	<frame name=topFrame src="${pageContext.request.contextPath }/page/MenuMag/top.jsp" noResize scrolling=no>
-	<frameset name="main" border=0 frameSpacing=0 frameBorder=1 cols=143,*>
-		<frame name="leftFrame" src="${pageContext.request.contextPath }/page/MenuMag/left.jsp" noResize scrolling="auto">
-		<frame name="main" scrolling="auto">
+	<frameset border=0 frameSpacing="0" rows="85,*"frameBorder="0" id="mainparent">
+		<frame name=topFrame src="${pageContext.request.contextPath }/page/MenuMag/top.jsp" noResize scrolling=no>
+		<frameset name="main" border=0 frameSpacing=0 frameBorder="0" cols=168,*>
+			<frame name="leftFrame" src="${pageContext.request.contextPath }/page/MenuMag/left.jsp" noResize scrolling="auto">
+			<frame name="main" scrolling="auto">
+		</frameset>
+		<%-- 
+		<frame name=topFrame src="${pageContext.request.contextPath }/page/MenuMag/buttom.jsp" noResize scrolling=no>
+		 --%>
 	</frameset>
-	<%-- 
-	<frame name=topFrame src="${pageContext.request.contextPath }/page/MenuMag/buttom.jsp" noResize scrolling=no>
-	 --%>
-</frameset>
 		
 </html>

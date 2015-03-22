@@ -47,7 +47,7 @@
 </head>
 
 <body>
-	<table height="100%" width="140" border="0" cellSpacing="0" cellPadding="0">
+	<table height="100%" width="150" border="0" cellSpacing="0" cellPadding="0">
 		<tr height="6"><td></td></tr>
 		<tr>
 			<td vAlign="top" bgColor="#F6F6F6" height="100%">
@@ -213,7 +213,7 @@
 					<table cellSpacing="0" cellPadding="0" width="99%" border="0">
 						<tr height="25">
 							<td class="box05" onmouseover="backgroundColorChange(this,'#AAAAAA');" onmouseout="backgroundColorChange(this,'');">
-								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/UserMag/deviceInfoList.jsp' target="main">权限列表</a>
+								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/AuthorityMag/roleIndex.jsp' target="main">角色权限管理</a>
 							</td>
 						</tr>
 					</table>
@@ -237,22 +237,22 @@
 					<table cellSpacing="0" cellPadding="0" width="99%" border="0">
 						<tr height="25">
 							<td class="box05" onmouseover="backgroundColorChange(this,'#AAAAAA');" onmouseout="backgroundColorChange(this,'');">
-								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/UserMag/deviceInfoList.jsp' target="main">用户性别统计</a>
+								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/CountMag/userSexCount.jsp' target="main">用户性别统计</a>
 							</td>
 						</tr>
 						<tr height="25">
 							<td class="box05" onmouseover="backgroundColorChange(this,'#AAAAAA');" onmouseout="backgroundColorChange(this,'');">
-								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/UserMag/deviceInfoList.jsp' target="main">维护人员类别统计</a>
+								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/CountMag/userTypeCount.jsp' target="main">维护人员类别统计</a>
 							</td>
 						</tr>
 						<tr height="25">
 							<td class="box05" onmouseover="backgroundColorChange(this,'#AAAAAA');" onmouseout="backgroundColorChange(this,'');">
-								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/UserMag/deviceInfoList.jsp' target="main">设备故障次数统计</a>
+								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/CountMag/deviceBreakdownCount.jsp' target="main">设备故障次数统计</a>
 							</td>
 						</tr>
 						<tr height="25">
 							<td class="box05" onmouseover="backgroundColorChange(this,'#AAAAAA');" onmouseout="backgroundColorChange(this,'');">
-								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/UserMag/deviceInfoList.jsp' target="main">各种评价数量统计</a>
+								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/CountMag/userEvaluateCount.jsp' target="main">各种评价数量统计</a>
 							</td>
 						</tr>
 					</table>
@@ -276,7 +276,7 @@
 					<table cellSpacing="0" cellPadding="0" width="99%" border="0">
 						<tr height="25">
 							<td class="box05" onmouseover="backgroundColorChange(this,'#AAAAAA');" onmouseout="backgroundColorChange(this,'');">
-								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/UserMag/deviceInfoList.jsp' target="main">资源列表</a>
+								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/ResourceMag/dictionaryIndex.jsp' target="main">资源列表</a>
 							</td>
 						</tr>
 					</table>
@@ -284,6 +284,7 @@
 				<!-- 资源管理end -->
 			</td>
 		</tr>
+		<tr height="60"><td></td></tr>
 	</table>
 </body>
 </html>

@@ -63,8 +63,14 @@ pub.css		公有的样式
 	evaluateInfoEdit.jsp			去评价
 
 六、AuthorityMag 权限管理
-
+	roleIndex.jsp					权限列表
+	roleEdit.jsp					编辑用户权限
+	
 七、CountMag		统计管理
+	deviceBreakdownCount.jsp		设备种类出现故障报表统计
+	userEvaluateCount.jsp			用户各种评价报表统计
+	userSexCount.jsp				用户性别报表统计
+	userTypeCount.jsp				用户类型报表统计
 	
 八、ResourceMag  资源管理
 
