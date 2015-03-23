@@ -27,17 +27,33 @@
 			</td>
 		</tr>
 	    <tr>
-	       <td align="center" bgColor="#f5fafe" class="ta_01">区&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;域：<font color="#FF0000">*</font></td>
-	       <td class="ta_01" bgColor="#ffffff">
+	       	<td align="center" bgColor="#f5fafe" class="ta_01">区&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;域：<font color="#FF0000">*</font></td>
+	       	<td class="ta_01" bgColor="#ffffff">
 	       		<select id="area" name="area" style="width: 138px">
 					<option>------请选择------</option>				
 					<option>教室</option>				
 					<option>寝室</option>				
 					<option>机房</option>				
 				</select>
-	       </td>
-	       <td align="center" bgColor="#f5fafe" class="ta_01">设&nbsp;&nbsp;备&nbsp;&nbsp;名：<font color="#FF0000">*</font></td>
-	       <td class="ta_01" bgColor="#ffffff">
+	       	</td>
+	       	<td align="center" bgColor="#f5fafe" class="ta_01">安装位置：<font color="#FF0000">*</font></td>
+	       	<td class="ta_01" bgColor="#ffffff">
+	       		<select id="installationSite" name="installationSite" style="width: 138px">
+					<option>------请选择------</option>				
+					<option>A4049</option>				
+					<option>B3098</option>				
+					<option>D6732</option>				
+					<option>A1234</option>				
+					<option>R6742</option>				
+					<option>T7787</option>				
+				</select>
+	       	</td>
+	       
+	    </tr>
+	    
+		<tr>
+			<td align="center" bgColor="#f5fafe" class="ta_01">设&nbsp;&nbsp;备&nbsp;&nbsp;名：<font color="#FF0000">*</font></td>
+	       	<td class="ta_01" bgColor="#ffffff">
 	       		<select id="deviceName" name="deviceName" style="width: 138px">
 					<option>------请选择------</option>				
 					<option>计算机</option>				
@@ -47,10 +63,7 @@
 					<option>风扇</option>				
 					<option>桌子</option>				
 				</select>
-	       </td>
-	    </tr>
-	    
-		<tr>
+	       	</td>
 			<td align="center" bgColor="#f5fafe" class="ta_01">型&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号：<font color="#FF0000">*</font></td>
 	       	<td class="ta_01" bgColor="#ffffff">
 	       		<select id="version" name="version" style="width: 138px">
@@ -63,25 +76,13 @@
 					<option>MMHH</option>				
 				</select>
 	      	</td>
-			<td align="center" bgColor="#f5fafe" class="ta_01">安装位置：<font color="#FF0000">*</font></td>
-	       	<td class="ta_01" bgColor="#ffffff">
-	       		<select id="installationSite" name="installationSite" style="width: 138px">
-					<option>------请选择------</option>				
-					<option>A4049</option>				
-					<option>B3098</option>				
-					<option>D6732</option>				
-					<option>A1234</option>				
-					<option>R6742</option>				
-					<option>T7787</option>				
-				</select>
-	       	</td>
 		</tr>
 		<tr>
 		    <td align="center" bgColor="#f5fafe" class="ta_01">申报人联系方式：</td>
 			<td class="ta_01" bgColor="#ffffff">
 				<input class="" type="text" size="20" id="phone" name="phone">
 			</td>
-			<td align="center" bgColor="#f5fafe" class="ta_01">希望处理日期：</td>
+			<td align="center" bgColor="#f5fafe" class="ta_01">预约日期：</td>
 			<td class="ta_01" bgColor="#ffffff">
 				<input class="Wdate" type="text" size="20" onclick="WdatePicker({readOnly:true,highLineWeekDay:false})">
 			</td>

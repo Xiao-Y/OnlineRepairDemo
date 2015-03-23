@@ -172,7 +172,7 @@
 							</td>
 							<td style="height:22px" align="center" width="10%">
 								<input type="hidden" id="123">
-								<a href="${pageContext.request.contextPath }/page/ReportingMag/reportingBugView.jsp">多媒体</a>
+								<a href="${pageContext.request.contextPath }/page/ReportingMag/reportingBugInfoView.jsp">多媒体</a>
 							</td>
 							<td style="height:22px" align="center" width="6%">
 								<a href="${pageContext.request.contextPath }/page/UserMag/userInfoView.jsp">XiaoY</a>
@@ -193,7 +193,7 @@
 								已通过
 							</td>
 							<td align="center" style="HEIGHT: 22px" align="center" width="5%">																	
-							   <a href="${pageContext.request.contextPath }/page/ReportingMag/reportingBugEdit.jsp">
+							   <a href="${pageContext.request.contextPath }/page/ReportingMag/reportingBugInfoEdit.jsp">
 							   <img src="${pageContext.request.contextPath }/images/edit.gif" border="0" style="cursor:hand"></a>													
 							</td>
 							<td align="center" style="HEIGHT: 22px" align="center" width="5%">

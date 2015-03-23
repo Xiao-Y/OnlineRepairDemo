@@ -144,7 +144,7 @@
 							</td>
 							<td style="height:22px" align="center" width="15%">
 								<input type="hidden" id="123">
-								<a href="${pageContext.request.contextPath }/page/ReportingMag/reportingBugView.jsp">多媒体</a>
+								<a href="${pageContext.request.contextPath }/page/ReportingMag/reportingBugInfoView.jsp">多媒体</a>
 							</td>
 							<td style="height:22px" align="center" width="10%">
 								<a href="${pageContext.request.contextPath }/page/UserMag/userInfoView.jsp">XiaoY</a>

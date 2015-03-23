@@ -23,11 +23,11 @@
 		    <tr>
 		       <td align="center" bgColor="#f5fafe" class="ta_01">登&nbsp;&nbsp;陆&nbsp;&nbsp;名：<font color="#FF0000">*</font></td>
 		       <td class="ta_01" bgColor="#ffffff">
-		       		<input name="deviceName" id="deviceName" maxlength="25" size="20">
+		       		<input name="loginName" id="loginName" maxlength="25" size="20" style="width: 134px">
 		       </td>
 		       <td width="18%" align="center" bgColor="#f5fafe" class="ta_01">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：<font color="#FF0000">*</font></td>
 		       <td class="ta_01" bgColor="#ffffff">
-		       		<input name="version" id="version" maxlength="25" size="20">
+		       		<input name="name" id="name" maxlength="5" size="20" style="width: 134px">
 		       </td>
 		    </tr>
 		    
@@ -63,18 +63,14 @@
 		       	</td>
 			    <td align="center" bgColor="#f5fafe" class="ta_01">联系方式：</td>
 				<td class="ta_01" bgColor="#ffffff">
-					<input name="phone" id="phone" maxlength="25" size="20">
+					<input name="phone" id="phone" maxlength="25" size="20" style="width: 134px">
 				</td>
 			</tr>
 			
 			<tr>
 			    <td align="center" bgColor="#f5fafe" class="ta_01">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</td>
-				<td class="ta_01" bgColor="#ffffff">
-					<input name="" id="" maxlength="25" size="20">
-				</td>
-				<td align="center" bgColor="#f5fafe" class="ta_01">注册日期：</td>
-				<td class="ta_01" bgColor="#ffffff">
-					<input class="Wdate" type="text" size="20" onclick="WdatePicker({readOnly:true,highLineWeekDay:false})">
+				<td class="ta_01" bgColor="#ffffff" colSpan="3">
+					<textarea name="address" id="address" style="width:95%" rows="3" cols="52"></textarea>
 				</td>
 			</tr>
 			

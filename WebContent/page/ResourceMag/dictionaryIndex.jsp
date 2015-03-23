@@ -11,12 +11,16 @@
 <script type="text/javascript">
 function insertRows() {
 	var tempRow = 0;
-	var tbl = document.getElementById("dictTbl");
-	alert(tbl);
-	tempRow = tbl.rows.length;
-	var Rows = tbl.rows;//类似数组的Rows 
-	var newRow = tbl.insertRow(tbl.rows.length);//插入新的一行 
+	//var tbl = document.getElementById("dictTbl");
+	//tempRow = tbl.rows.length;//计算出现当前是多少行
+	tempRow = $("#dictTbl tr").length;//计算出现当前是多少行
+	
+	//var newRow = tbl.insertRow(tbl.rows.length);//插入新的一行 
+	var newRow = $("#dictTbl").insertRow(tempRow);
 	var Cells = newRow.cells;//类似数组的Cells 
+	
+	var Rows = tbl.rows;//类似数组的Rows 
+	
 	for (i = 0; i < 3; i++)//每行的3列数据 
 	{
 		var newCell = Rows(newRow.rowIndex).insertCell(Cells.length);

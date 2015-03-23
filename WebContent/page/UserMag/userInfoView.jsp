@@ -53,16 +53,17 @@
 			</tr>
 			
 			<tr>
-			    <td align="center" bgColor="#f5fafe" class="ta_01">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</td>
-				<td class="ta_01" bgColor="#ffffff">
-					<input name="" id="" maxlength="25" size="20" value="北京" disabled="disabled">
-				</td>
 				<td align="center" bgColor="#f5fafe" class="ta_01">注册日期：</td>
 				<td class="ta_01" bgColor="#ffffff">
 					<input class="Wdate" type="text" size="20" value="2015-01-03" disabled="disabled">
 				</td>
 			</tr>
-			
+			<tr>
+			    <td align="center" bgColor="#f5fafe" class="ta_01">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</td>
+				<td class="ta_01" bgColor="#ffffff" colSpan="3">
+					<textarea name="address" id="address" style="width:95%" rows="3" cols="52" disabled="disabled"></textarea>
+				</td>
+			</tr>
 			<tr>
 				<td class="ta_01" align="center" bgcolor="#f5fafe">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注：</td>
 				<td class="ta_01" bgcolor="#ffffff" colspan="3">

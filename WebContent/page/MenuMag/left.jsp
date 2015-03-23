@@ -192,6 +192,11 @@
 								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/EvaluateMag/evaluateInfoList.jsp' target="main">我的评价</a>
 							</td>
 						</tr>
+						<tr height="25">
+							<td class="box05" onmouseover="backgroundColorChange(this,'#AAAAAA');" onmouseout="backgroundColorChange(this,'');">
+								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/EvaluateMag/evaluateInfo' target="main">留言管理</a>
+							</td>
+						</tr>
 					</table>
 				</div>
 				<!-- 评价留言管理 end -->
