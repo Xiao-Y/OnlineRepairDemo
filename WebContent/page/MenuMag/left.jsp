@@ -225,6 +225,40 @@
 				</div>
 				<!-- 权限管理 end -->
 				
+				<!-- 资源管理 begin -->
+				<div class="qx" id="resourceMagParent">
+					<table cellSpacing="0" cellPadding="0" width="100%" border="0">
+						<tr height=25>
+							<td align="left" background="${pageContext.request.contextPath }/images/b-info.gif"  vAlign="middle">
+								<div class="img">
+									&nbsp;<img src="${pageContext.request.contextPath }/images/add.gif" name="resourceMagParent" width="8" height="9" alt="" border="0" />
+									资源管理
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="qx_list" id="resourceMagChild">
+					<table cellSpacing="0" cellPadding="0" width="99%" border="0">
+						<tr height="25">
+							<td class="box05" onmouseover="backgroundColorChange(this,'#AAAAAA');" onmouseout="backgroundColorChange(this,'');">
+								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/ResourceMag/dictionaryIndex.jsp' target="main">发布公告</a>
+							</td>
+						</tr>
+						<tr height="25">
+							<td class="box05" onmouseover="backgroundColorChange(this,'#AAAAAA');" onmouseout="backgroundColorChange(this,'');">
+								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/ResourceMag/dictionaryIndex.jsp' target="main">数据字典</a>
+							</td>
+						</tr>
+						<tr height="25">
+							<td class="box05" onmouseover="backgroundColorChange(this,'#AAAAAA');" onmouseout="backgroundColorChange(this,'');">
+								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/ResourceMag/dictionaryIndex.jsp' target="main">日志管理</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<!-- 资源管理end -->
+				
 				<!-- 统计管理 beging -->
 				<div class="qx" id="countMagParent">
 					<table cellSpacing="0" cellPadding="0" width="100%" border="0">
@@ -264,29 +298,6 @@
 				</div>
 				<!-- 统计管理 end -->
 				
-				<!-- 资源管理 begin -->
-				<div class="qx" id="resourceMagParent">
-					<table cellSpacing="0" cellPadding="0" width="100%" border="0">
-						<tr height=25>
-							<td align="left" background="${pageContext.request.contextPath }/images/b-info.gif"  vAlign="middle">
-								<div class="img">
-									&nbsp;<img src="${pageContext.request.contextPath }/images/add.gif" name="resourceMagParent" width="8" height="9" alt="" border="0" />
-									资源管理
-								</div>
-							</td>
-						</tr>
-					</table>
-				</div>
-				<div class="qx_list" id="resourceMagChild">
-					<table cellSpacing="0" cellPadding="0" width="99%" border="0">
-						<tr height="25">
-							<td class="box05" onmouseover="backgroundColorChange(this,'#AAAAAA');" onmouseout="backgroundColorChange(this,'');">
-								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/ResourceMag/dictionaryIndex.jsp' target="main">资源列表</a>
-							</td>
-						</tr>
-					</table>
-				</div>
-				<!-- 资源管理end -->
 			</td>
 		</tr>
 		<tr height="60"><td></td></tr>
