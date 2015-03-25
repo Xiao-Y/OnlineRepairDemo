@@ -73,4 +73,5 @@ pub.css		公有的样式
 	userTypeCount.jsp				用户类型报表统计
 	
 八、ResourceMag  资源管理
-
+	dictionaryEdit.jsp				编辑数据字典
+	dictionaryIndex.jsp				数据字典列表
