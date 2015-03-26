@@ -242,7 +242,7 @@
 					<table cellSpacing="0" cellPadding="0" width="99%" border="0">
 						<tr height="25">
 							<td class="box05" onmouseover="backgroundColorChange(this,'#AAAAAA');" onmouseout="backgroundColorChange(this,'');">
-								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/ResourceMag/dictionaryIndex.jsp' target="main">发布公告</a>
+								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/ResourceMag/noticeIndex.jsp' target="main">发布公告</a>
 							</td>
 						</tr>
 						<tr height="25">
@@ -252,7 +252,7 @@
 						</tr>
 						<tr height="25">
 							<td class="box05" onmouseover="backgroundColorChange(this,'#AAAAAA');" onmouseout="backgroundColorChange(this,'');">
-								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/ResourceMag/dictionaryIndex.jsp' target="main">日志管理</a>
+								&nbsp;&nbsp;&nbsp;&nbsp;<a class="cl_01" onclick="linkcolorchange(this)" href='${pageContext.request.contextPath }/page/ResourceMag/logIndex.jsp' target="main">日志管理</a>
 							</td>
 						</tr>
 					</table>

@@ -75,3 +75,6 @@ pub.css		公有的样式
 八、ResourceMag  资源管理
 	dictionaryEdit.jsp				编辑数据字典
 	dictionaryIndex.jsp				数据字典列表
+	actingIndex.jsp					公告
+	logList.jsp						日志列表
+	logIndex.jsp					日志初始列表
